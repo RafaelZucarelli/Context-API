@@ -1,11 +1,16 @@
-import React from 'react'
 
-const page1 = () => {
+import { useContext } from 'react';
+import { CounterContext }  from '../context/CounterContext';
+
+const Home = () => {
+  const {counter } = useContext(CounterContext);
+
   return (
     <div>
-      <h1>PAGE 1</h1>
+      <h1>Home</h1>
+      <p>Valor do contador: {counter}</p>
     </div>
   )
 }
 
-export default page1
+export default Home
