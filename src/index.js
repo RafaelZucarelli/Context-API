@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { CounterContext, CounterContextProvider } from './context/CounterContext';
+import { CounterContextProvider } from './context/CounterContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
